@@ -1,0 +1,249 @@
+/*!
+ * NenmorphismCSS v0.1.0 
+ * Licensed under GUN GPLv2 (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ */
+
+
+/* all */
+
+* {
+    outline: none;
+}
+
+
+/* card */
+
+.card {
+    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
+    padding: 30px;
+}
+
+.card-concave {
+    box-shadow: inset 8px 8px 16px #d4d4d4, inset -8px -8px 16px #ffffff;
+}
+
+
+/* border */
+
+.border {
+    border-radius: 35px;
+}
+
+.border-sm {
+    border-radius: 15px;
+}
+
+.border-lg {
+    border-radius: 50px;
+}
+
+.border-all {
+    border-radius: 50%;
+}
+
+
+/* divider */
+
+hr {
+    margin-bottom: 20px;
+}
+
+.divider {
+    height: 5px;
+    box-shadow: 1px 1px 2px #cdcbcb, -1px -1px 2px #ffffff;
+    border: none;
+}
+
+.divider-sm {
+    width: 100px;
+    margin-inline-start: unset;
+}
+
+
+/* img */
+
+.img {
+    max-width: 100%;
+}
+
+
+/* button */
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 3px 21px;
+    line-height: 38px;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.btn-cleary:hover {
+    transform: translateY(0px);
+}
+
+
+/* btn a */
+
+.btn-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* default button */
+
+.btn-default {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    box-shadow: 5px 5px 14px #cccccc, -5px -5px 14px #ffffff;
+    color: #000;
+}
+
+.btn-default:hover {
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+.btn-default:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-default:focus {
+    box-shadow: 0px 2px 10px #cccccc, 0px 2px 1px #ffffff;
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+
+/* primary button */
+
+.btn-primary {
+    background: linear-gradient(145deg, #4ec8ff, #42a8db);
+    box-shadow: 6px 6px 13px #95dcff, -5px -5px 14px #ffffff;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(145deg, #61bfef, #509fc7);
+}
+
+.btn-primary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-primary:focus {
+    box-shadow: 0px 2px 10px #95dcff;
+}
+
+
+/* secondary button */
+
+.btn-secondary {
+    background: linear-gradient(145deg, #b6babd, #999d9f);
+    box-shadow: 6px 6px 13px #a2a5a899, -5px -5px 14px #ffffff;
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
+}
+
+.btn-secondary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-secondary:focus {
+    box-shadow: 0px 2px 10px #a2a5a8;
+}
+
+
+/* success button */
+
+.btn-success {
+    background: linear-gradient(145deg, #a9ec8c, #8ec776);
+    box-shadow: 6px 6px 13px #96d27c99, -5px -5px 14px #ffffff;
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(145deg, #a1da88, #87b872);
+}
+
+.btn-success:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-success:focus {
+    box-shadow: 0px 2px 10px #96d27c;
+}
+
+
+/* warning button */
+
+.btn-warning {
+    background: linear-gradient(145deg, #e6dc71, #c2b95f);
+    box-shadow: 6px 6px 13px #cdc56999, -5px -5px 14px #ffffff;
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
+}
+
+.btn-warning:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-warning:focus {
+    box-shadow: 0px 2px 10px #cdc569;
+}
+
+
+/* danger button */
+
+.btn-danger {
+    background: linear-gradient(145deg, #b33964, #963054);
+    box-shadow: 6px 6px 13px #9f325882, -5px -5px 14px #ffffff;
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(145deg, #ad4368, #923957);
+}
+
+.btn-danger:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-danger:focus {
+    box-shadow: 0px 2px 10px #9f3258;
+}
+
+
+/* shadow */
+
+.shadow {
+    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
+}
