@@ -141,7 +141,8 @@ button {
     border: none;
     border-radius: 8px;
     text-align: center;
-    transition: transform 0.3s ease;
+    transition: 0.3s ease;
+    transition-property: box-shadow, transform;
 }
 
 .btn-full {
