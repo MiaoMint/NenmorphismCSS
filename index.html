@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NenmorphismCSS-Examplepage</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="NeumorphismCSS_1.0.0.css">
+    <link rel="stylesheet" href="NeumorphismCSS.css">
 </head>
 
 <body>
@@ -67,29 +67,101 @@
         <a class="btn btn-danger btn-link" style="margin: 1rem;" href="#">danger</a>
 
         <h2>卡片</h2>
-        <div class="card border-sm" style="margin-bottom: 2rem;">
-            <h3>card 凸</h3>
+        <div class="shadow border-sm" style="margin-bottom: 2rem;">
+            <div class="card-body">
+                <h3>card 凸</h3>
+            </div>
+
         </div>
 
-        <div class="card card-concave border-sm">
-            <h3>card 凹</h3>
+        <div class=" shadow-concave border-sm" style="margin-bottom: 2rem;">
+            <div class="card-body">
+                <h3>card 凹</h3>
+            </div>
         </div>
+
+        <h3>一些例子</h3>
+        <div class="grid-4">
+            <div class="shadow border-sm" style="margin: 1rem;">
+                <div class="card-top-p">
+                    <img class=" border-sm img" src="https://api.mmcee.cn/acgimg/acgurl.php" alt="demo">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">边距 图 无阴影 </h3>
+                </div>
+            </div>
+
+            <div class="shadow border-sm" style="margin: 1rem;">
+                <div class="card-top">
+                    <img class=" border-sm-t img" src="https://api.mmcee.cn/acgimg/acgurl.php" alt="demo">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title">无边距 图 无阴影 </h3>
+                </div>
+            </div>
+
+            <div class="shadow border-sm" style="margin: 1rem;">
+                <div class="card-top-p">
+                    <img class=" border-sm shadow-sm img" src="https://api.mmcee.cn/acgimg/acgurl.php" alt="demo">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title ">边距 图 有阴影</h3>
+                </div>
+            </div>
+
+            <div class="shadow  shadow-concave border-sm" style="margin: 1rem;">
+                <div class="card-top-p">
+                    <img class=" border-sm shadow-sm img" src="https://api.mmcee.cn/acgimg/acgurl.php" alt="demo">
+                </div>
+                <div class="card-body">
+                    <h3 class="card-title ">边距 无图 有凹阴影</h3>
+                </div>
+            </div>
+
+        </div>
+
 
         <h2>圆角</h2>
-        <div class="grid-4">
-            <div class="card border" style="margin: 1rem;">
-                <h3>普通圆角</h3>
+
+        <div class="grid-4" style="margin: 1rem;">
+            <div class="shadow border" style="margin: 1rem;">
+                <div class="card-body">
+                    <h3>普通圆角</h3>
+                </div>
             </div>
-            <div class="card border-sm" style="margin: 1rem;">
-                <h3>较小圆角</h3>
+            <div class="shadow border-sm" style="margin: 1rem;">
+                <div class="card-body">
+                    <h3>较小圆角</h3>
+                </div>
             </div>
-            <div class="card border-lg" style="margin: 1rem;">
-                <h3>较大圆角</h3>
+            <div class="shadow border-lg" style="margin: 1rem;">
+                <div class="card-body">
+                    <h3>较大圆角</h3>
+                </div>
             </div>
-            <div class="card border-all" style="margin: 1rem; width: 100px;  height: 100px; ">
-                <h3>全圆</h3>
+            <div class="shadow border-all" style="margin: 1rem; width: 100px;  height: 100px; ">
+                <div class="card-body">
+                    <h3>全圆</h3>
+                </div>
             </div>
         </div>
+
+        <div class="grid-3">
+
+            <div class="shadow border-t" style="margin: 1rem;">
+                <div class="card-body">
+                    <h3>仅上两角 普通圆角</h3>
+                </div>
+            </div>
+
+            <div class="shadow border-b" style="margin: 1rem;">
+                <div class="card-body">
+                    <h3>仅下两角 普通圆角</h3>
+                </div>
+            </div>
+
+        </div>
+
         <h2>分割线</h2>
         <h3>普通分割线</h3>
         <hr class="divider">
@@ -98,8 +170,32 @@
         <h3>自定义分割线</h3>
         <hr class="divider divider-sm" style="width: 200px;">
 
+
+        <h2>阴影</h2>
+
+        <div class=" shadow border-sm" style="margin-bottom: 2rem;">
+            <div class="card-body">
+                <h3>shadow 凸 普通阴影</h3>
+            </div>
+
+        </div>
+
+        <div class=" shadow-concave border-sm" style="margin-bottom: 2rem;">
+            <div class="card-body">
+                <h3>shadow 凹 普通阴影</h3>
+            </div>
+        </div>
+
+        <div class="shadow-sm border-sm" style="margin-bottom: 2rem;">
+            <div class="card-body">
+                <h3>shadow 凸 小阴影</h3>
+            </div>
+        </div>
+
         <h2>图片</h2>
         <img src="https://api.mmcee.cn/acgimg/acgurl.php" class="img shadow" width="600px" alt="shadow">
+
+
 
     </main>
 

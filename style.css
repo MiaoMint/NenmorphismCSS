@@ -12,7 +12,7 @@ main {
 }
 
 .n-card {
-    background: linear-gradient(145deg, #ffffff, #ebebeb);
+    background-color: #efefef;
     box-shadow: 20px 20px 60px #d9d9d9;
 }
 

@@ -1,40 +1,101 @@
 /*!
  * NenmorphismCSS v0.1.0 
- * Licensed under GUN GPLv2 (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * Licensed under GUN GPLv2 (https://github.com/ERHECY/NenmorphismCSS/blob/master/LICENSE)
  */
 
 
-/* all */
+/* all 全局 */
 
 * {
     outline: none;
 }
 
 
-/* card */
+/* card 卡片 */
 
 .card {
-    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
-    padding: 30px;
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
 }
 
 .card-concave {
+    box-shadow: inset 12px 12px 16px 0px #d4d4d4, inset -8px -8px 16px #ffffff;
+}
+
+.card-body {
+    padding: 5px 15px 15px 15px;
+}
+
+.card-top {
+    text-align: center;
+}
+
+.card-top-p {
+    text-align: center;
+    padding: 4% 4% 0 4%;
+}
+
+.card-title {
+    margin: 0;
+}
+
+
+/* shadow 阴影 */
+
+
+/* 
+.shadow {
+    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
+} */
+
+.shadow {
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+}
+
+.shadow-sm {
+    box-shadow: 1px 1px 2px #cdcbcb, -1px -1px 2px #ffffff;
+}
+
+.shadow-concave {
     box-shadow: inset 8px 8px 16px #d4d4d4, inset -8px -8px 16px #ffffff;
 }
 
 
-/* border */
+/* border 圆角 */
 
 .border {
     border-radius: 35px;
+}
+
+.border-t {
+    border-radius: 35px 35px 0px 0px;
+}
+
+.border-b {
+    border-radius: 0px 0px 35px 35px;
 }
 
 .border-sm {
     border-radius: 15px;
 }
 
+.border-sm-t {
+    border-radius: 15px 15px 0px 0px;
+}
+
+.border-sm-b {
+    border-radius: 0px 0px 15px 15px;
+}
+
 .border-lg {
     border-radius: 50px;
+}
+
+.border-lg-t {
+    border-radius: 50px 50px 0px 0px;
+}
+
+.border-lg-b {
+    border-radius: 0px 0px 50px 50px;
 }
 
 .border-all {
@@ -42,14 +103,14 @@
 }
 
 
-/* divider */
+/* divider 分割线 */
 
 hr {
     margin-bottom: 20px;
 }
 
 .divider {
-    height: 5px;
+    height: 2px;
     box-shadow: 1px 1px 2px #cdcbcb, -1px -1px 2px #ffffff;
     border: none;
 }
@@ -60,14 +121,14 @@ hr {
 }
 
 
-/* img */
+/* img 图片 */
 
 .img {
     max-width: 100%;
 }
 
 
-/* button */
+/* button  按钮 */
 
 button {
     cursor: pointer;
@@ -79,7 +140,7 @@ button {
     border: none;
     border-radius: 8px;
     text-align: center;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease;
 }
 
 .btn-full {
@@ -95,7 +156,7 @@ button {
 }
 
 
-/* btn a */
+/* btn a 超链接链接 */
 
 .btn-link {
     display: inline-block;
@@ -147,6 +208,7 @@ button {
 
 .btn-primary:focus {
     box-shadow: 0px 2px 10px #95dcff;
+    background: linear-gradient(145deg, #61bfef, #509fc7);
 }
 
 
@@ -170,6 +232,7 @@ button {
 
 .btn-secondary:focus {
     box-shadow: 0px 2px 10px #a2a5a8;
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
 }
 
 
@@ -193,6 +256,7 @@ button {
 
 .btn-success:focus {
     box-shadow: 0px 2px 10px #96d27c;
+    background: linear-gradient(145deg, #a1da88, #87b872);
 }
 
 
@@ -216,6 +280,7 @@ button {
 
 .btn-warning:focus {
     box-shadow: 0px 2px 10px #cdc569;
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
 }
 
 
@@ -223,7 +288,7 @@ button {
 
 .btn-danger {
     background: linear-gradient(145deg, #b33964, #963054);
-    box-shadow: 6px 6px 13px #9f325882, -5px -5px 14px #ffffff;
+    box-shadow: 6px 6px 13px #9f325866, -5px -5px 14px #ffffff;
     color: #ffffff;
 }
 
@@ -239,11 +304,5 @@ button {
 
 .btn-danger:focus {
     box-shadow: 0px 2px 10px #9f3258;
-}
-
-
-/* shadow */
-
-.shadow {
-    box-shadow: 8px 8px 16px #d4d4d4, -8px -8px 16px #ffffff;
+    background: linear-gradient(145deg, #ad4368, #923957);
 }
