@@ -1,1 +1,2 @@
-*.md linguist-language=CSS
+*.html linguist-language=css
+*.md linguist-language=css
