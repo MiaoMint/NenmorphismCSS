@@ -13,13 +13,14 @@
 
 /* card 卡片 */
 
-.card {
+
+/* .card {
     box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
 }
 
 .card-concave {
     box-shadow: inset 12px 12px 16px 0px #d4d4d4, inset -8px -8px 16px #ffffff;
-}
+} */
 
 .card-body {
     padding: 5px 15px 15px 15px;
