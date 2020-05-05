@@ -129,6 +129,27 @@ hr {
 }
 
 
+/* input 表单 */
+
+.input {
+    color: #868a9a;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 16px;
+    background-color: #ffffff00;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    transition: all .2s ease-in-out;
+}
+
+.input:hover {
+    box-shadow: inset 2px 2px 2px #babecc, inset -1px -2px 5px #fff;
+}
+
+
 /* button  按钮 */
 
 button {
@@ -143,6 +164,11 @@ button {
     text-align: center;
     transition: 0.3s ease;
     transition-property: box-shadow, transform;
+}
+
+.btn-sm {
+    padding: 1px 12px;
+    line-height: 30px;
 }
 
 .btn-full {

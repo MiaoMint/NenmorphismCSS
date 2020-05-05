@@ -1,19 +1,13 @@
+body {
+    margin: 0;
+    background-color: #ebecf0;
+}
+
 main {
     width: 65%;
-    margin: auto;
+    margin: 0 auto;
     max-width: 1644px;
     padding: 18px;
-}
-
-@media (max-width: 1260px) {
-    main {
-        width: 100%;
-    }
-}
-
-.n-card {
-    background-color: #efefef;
-    box-shadow: 20px 20px 60px #d9d9d9;
 }
 
 .grid-3 {
@@ -24,4 +18,16 @@ main {
 .grid-4 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
+}
+
+@media (max-width: 1260px) {
+    main {
+        width: 100%;
+    }
+    .grid-3 {
+        grid-template-columns: 50% 50%;
+    }
+    .grid-4 {
+        grid-template-columns: 50% 50%;
+    }
 }
