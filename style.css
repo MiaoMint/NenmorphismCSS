@@ -4,7 +4,7 @@ body {
 }
 
 main {
-    width: 65%;
+    width: 70%;
     margin: 0 auto;
     max-width: 1644px;
     padding: 18px;
@@ -29,5 +29,14 @@ main {
     }
     .grid-4 {
         grid-template-columns: 50% 50%;
+    }
+}
+
+@media (max-width: 600px) {
+    .grid-3 {
+        grid-template-columns: 100%;
+    }
+    .grid-4 {
+        grid-template-columns: 100%;
     }
 }

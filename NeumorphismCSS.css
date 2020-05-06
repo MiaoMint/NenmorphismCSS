@@ -1,5 +1,5 @@
 /*!
- * NenmorphismCSS v0.1.0 
+ * NenmorphismCSS v0.1.0 (https://github.com/ERHECY/NenmorphismCSS)
  * Licensed under GUN GPLv2 (https://github.com/ERHECY/NenmorphismCSS/blob/master/LICENSE)
  */
 
@@ -8,6 +8,197 @@
 
 * {
     outline: none;
+}
+
+
+/* button  按钮 */
+
+button {
+    cursor: pointer;
+}
+
+.btn {
+    padding: 3px 21px;
+    line-height: 38px;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.3s ease;
+    transition-property: box-shadow, transform;
+    font-size: 13.3333px;
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+}
+
+.btn-sm {
+    padding: 1px 12px;
+    line-height: 30px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+}
+
+.btn-cleary:hover {
+    transform: translateY(0px);
+}
+
+.btn:focus {
+    box-shadow: 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(255, 255, 255, .8), inset -8px -8px 20px rgb(255 255 255 / 0.31), inset 5px 5px 8px #2c2c2c38;
+}
+
+
+/* btn a 超链接链接 */
+
+.btn-link {
+    display: inline-block;
+    text-decoration: none;
+}
+
+
+/* default button */
+
+.btn-default {
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    /* box-shadow: 5px 5px 14px #cccccc, -5px -5px 14px #ffffff; */
+    color: #000;
+}
+
+.btn-default:hover {
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+.btn-default:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-default:focus {
+    /* box-shadow: 0px 2px 10px #cccccc, 0px 2px 1px #ffffff; */
+    background: linear-gradient(145deg, #ffffff, #dadada);
+}
+
+
+/* primary button */
+
+.btn-primary {
+    background: linear-gradient(145deg, #4ec8ff, #42a8db);
+    /* box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(145deg, #61bfef, #509fc7);
+}
+
+.btn-primary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-primary:focus {
+    background: linear-gradient(145deg, #61bfef, #509fc7);
+}
+
+
+/* secondary button */
+
+.btn-secondary {
+    background: linear-gradient(145deg, #b6babd, #999d9f);
+    /* box-shadow: 6px 6px 13px #a2a5a899, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-secondary:hover {
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
+}
+
+.btn-secondary:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-secondary:focus {
+    /* box-shadow: 0px 2px 10px #a2a5a8; */
+    background: linear-gradient(145deg, #a6aaac, #8c8f91);
+}
+
+
+/* success button */
+
+.btn-success {
+    background: linear-gradient(145deg, #a9ec8c, #8ec776);
+    /* box-shadow: 6px 6px 13px #96d27c99, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-success:hover {
+    background: linear-gradient(145deg, #a1da88, #87b872);
+}
+
+.btn-success:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-success:focus {
+    /* box-shadow: 0px 2px 10px #96d27c; */
+    background: linear-gradient(145deg, #a1da88, #87b872);
+}
+
+
+/* warning button */
+
+.btn-warning {
+    background: linear-gradient(145deg, #e6dc71, #c2b95f);
+    /* box-shadow: 6px 6px 13px #cdc56999, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-warning:hover {
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
+}
+
+.btn-warning:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-warning:focus {
+    /* box-shadow: 0px 2px 10px #cdc569; */
+    background: linear-gradient(145deg, #dad16d, #b8b05c);
+}
+
+
+/* danger button */
+
+.btn-danger {
+    background: linear-gradient(145deg, #b33964, #963054);
+    /* box-shadow: 6px 6px 13px #9f325866, -5px -5px 14px #ffffff; */
+    color: #ffffff;
+}
+
+.btn-danger:hover {
+    background: linear-gradient(145deg, #ad4368, #923957);
+}
+
+.btn-danger:disabled {
+    box-shadow: inset 1px 1px 5px 1px #cccccc;
+    background: linear-gradient(145deg, #ffffff, #ffffff);
+    color: rgb(170, 170, 170);
+}
+
+.btn-danger:focus {
+    /* box-shadow: 0px 2px 10px #9f3258; */
+    background: linear-gradient(145deg, #ad4368, #923957);
 }
 
 
@@ -27,7 +218,8 @@
 }
 
 .card-top {
-    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .card-top-p {
@@ -37,6 +229,16 @@
 
 .card-title {
     margin: 0;
+    color: #668a9a;
+}
+
+.card-body p {
+    margin: 0;
+    color: #668a9a91;
+}
+
+.card-body a {
+    text-decoration: none
 }
 
 
@@ -64,7 +266,7 @@
 /* border 圆角 */
 
 .border {
-    border-radius: 35px;
+    border-radius: 25px;
 }
 
 .border-t {
@@ -76,15 +278,15 @@
 }
 
 .border-sm {
-    border-radius: 15px;
+    border-radius: 10px;
 }
 
 .border-sm-t {
-    border-radius: 15px 15px 0px 0px;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .border-sm-b {
-    border-radius: 0px 0px 15px 15px;
+    border-radius: 0px 0px 10px 10px;
 }
 
 .border-lg {
@@ -150,187 +352,13 @@ hr {
 }
 
 
-/* button  按钮 */
+/* 基本样式 */
 
-button {
-    cursor: pointer;
-}
-
-.btn {
-    padding: 3px 21px;
-    line-height: 38px;
-    border: none;
-    border-radius: 8px;
-    text-align: center;
-    transition: 0.3s ease;
-    transition-property: box-shadow, transform;
-}
-
-.btn-sm {
-    padding: 1px 12px;
-    line-height: 30px;
-}
-
-.btn-full {
-    width: 100%;
-}
-
-.btn:hover {
-    transform: translateY(-5px);
-}
-
-.btn-cleary:hover {
-    transform: translateY(0px);
-}
-
-
-/* btn a 超链接链接 */
-
-.btn-link {
-    display: inline-block;
-    text-decoration: none;
-}
-
-
-/* default button */
-
-.btn-default {
-    background: linear-gradient(145deg, #ffffff, #e6e6e6);
-    box-shadow: 5px 5px 14px #cccccc, -5px -5px 14px #ffffff;
-    color: #000;
-}
-
-.btn-default:hover {
-    background: linear-gradient(145deg, #ffffff, #dadada);
-}
-
-.btn-default:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-default:focus {
-    box-shadow: 0px 2px 10px #cccccc, 0px 2px 1px #ffffff;
-    background: linear-gradient(145deg, #ffffff, #dadada);
-}
-
-
-/* primary button */
-
-.btn-primary {
-    background: linear-gradient(145deg, #4ec8ff, #42a8db);
-    box-shadow: 6px 6px 13px #95dcff, -5px -5px 14px #ffffff;
-    color: #ffffff;
-}
-
-.btn-primary:hover {
-    background: linear-gradient(145deg, #61bfef, #509fc7);
-}
-
-.btn-primary:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-primary:focus {
-    box-shadow: 0px 2px 10px #95dcff;
-    background: linear-gradient(145deg, #61bfef, #509fc7);
-}
-
-
-/* secondary button */
-
-.btn-secondary {
-    background: linear-gradient(145deg, #b6babd, #999d9f);
-    box-shadow: 6px 6px 13px #a2a5a899, -5px -5px 14px #ffffff;
-    color: #ffffff;
-}
-
-.btn-secondary:hover {
-    background: linear-gradient(145deg, #a6aaac, #8c8f91);
-}
-
-.btn-secondary:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-secondary:focus {
-    box-shadow: 0px 2px 10px #a2a5a8;
-    background: linear-gradient(145deg, #a6aaac, #8c8f91);
-}
-
-
-/* success button */
-
-.btn-success {
-    background: linear-gradient(145deg, #a9ec8c, #8ec776);
-    box-shadow: 6px 6px 13px #96d27c99, -5px -5px 14px #ffffff;
-    color: #ffffff;
-}
-
-.btn-success:hover {
-    background: linear-gradient(145deg, #a1da88, #87b872);
-}
-
-.btn-success:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-success:focus {
-    box-shadow: 0px 2px 10px #96d27c;
-    background: linear-gradient(145deg, #a1da88, #87b872);
-}
-
-
-/* warning button */
-
-.btn-warning {
-    background: linear-gradient(145deg, #e6dc71, #c2b95f);
-    box-shadow: 6px 6px 13px #cdc56999, -5px -5px 14px #ffffff;
-    color: #ffffff;
-}
-
-.btn-warning:hover {
-    background: linear-gradient(145deg, #dad16d, #b8b05c);
-}
-
-.btn-warning:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-warning:focus {
-    box-shadow: 0px 2px 10px #cdc569;
-    background: linear-gradient(145deg, #dad16d, #b8b05c);
-}
-
-
-/* danger button */
-
-.btn-danger {
-    background: linear-gradient(145deg, #b33964, #963054);
-    box-shadow: 6px 6px 13px #9f325866, -5px -5px 14px #ffffff;
-    color: #ffffff;
-}
-
-.btn-danger:hover {
-    background: linear-gradient(145deg, #ad4368, #923957);
-}
-
-.btn-danger:disabled {
-    box-shadow: inset 1px 1px 5px 1px #cccccc;
-    background: linear-gradient(145deg, #ffffff, #ffffff);
-    color: rgb(170, 170, 170);
-}
-
-.btn-danger:focus {
-    box-shadow: 0px 2px 10px #9f3258;
-    background: linear-gradient(145deg, #ad4368, #923957);
+.n-h1,
+.n-h2,
+.n-h3,
+.n-h4,
+.n-h5,
+.n-h6 {
+    color: #0000008a;
 }
