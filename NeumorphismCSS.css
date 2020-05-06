@@ -214,7 +214,7 @@ button {
 } */
 
 .card-body {
-    padding: 5px 15px 15px 15px;
+    padding: 15px;
 }
 
 .card-top {
@@ -361,4 +361,5 @@ hr {
 .n-h5,
 .n-h6 {
     color: #0000008a;
+    word-break: break-word;
 }
