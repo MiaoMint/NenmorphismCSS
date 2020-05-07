@@ -39,15 +39,19 @@ button {
 }
 
 .btn:hover {
-    transform: translateY(-5px);
+    box-shadow: 4px 4px 7px 0px #d4d4d4, -4px -4px 10px #ffffff;
 }
 
 .btn-cleary:hover {
-    transform: translateY(0px);
+    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
 }
 
 .btn:focus {
     box-shadow: 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(255, 255, 255, .8), inset -8px -8px 20px rgb(255 255 255 / 0.31), inset 5px 5px 8px #2c2c2c38;
+}
+
+.btn:disabled {
+    cursor: no-drop;
 }
 
 
@@ -251,7 +255,7 @@ button {
 } */
 
 .shadow {
-    box-shadow: 12px 12px 16px 0px #d4d4d4, -8px -8px 16px #ffffff;
+    box-shadow: -6px -5px 10px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
 }
 
 .shadow-sm {
@@ -331,7 +335,7 @@ hr {
 }
 
 
-/* input 表单 */
+/* form 表单 */
 
 .input {
     color: #868a9a;
@@ -351,8 +355,120 @@ hr {
     box-shadow: inset 2px 2px 2px #babecc, inset -1px -2px 5px #fff;
 }
 
+.textarea {
+    color: #868a9a;
+    text-shadow: 1px 1px 0 #fff;
+    padding: 16px;
+    background-color: #ffffff00;
+    font-size: 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    transition: all .2s ease-in-out;
+}
 
-/* 基本样式 */
+.textarea:hover {
+    box-shadow: inset 2px 2px 2px #babecc, inset -1px -2px 5px #fff;
+}
+
+.fieldset {
+    border: none;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+.legend {
+    width: 100%;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: #0000008a;
+}
+
+.select {
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 15px;
+    box-shadow: -6px -5px 12px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+    background-color: #ffffff00;
+    color: #868a9a;
+}
+
+.select:not([multiple]):not([size]) {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-right: 20px;
+    background-image: url(data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2224%22%20height%3D%2216%22%20viewBox%3D%220%200%2024%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%201%209%206%2015%206%22%20%2F%3E%0A%20%20%20%20%3Cpolygon%20fill%3D%22%23666%22%20points%3D%2212%2013%209%208%2015%208%22%20%2F%3E%0A%3C%2Fsvg%3E%0A);
+    background-repeat: no-repeat;
+    background-position: 99.5% 50%;
+}
+
+.radio {
+    border-radius: 50%;
+}
+
+.radio,
+.checkbox {
+    display: inline-block;
+    height: 25px;
+    width: 25px;
+    overflow: hidden;
+    margin-top: -4px;
+    vertical-align: middle;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    transition: .2s ease-in-out;
+    transition-property: box-shadow;
+    box-shadow: -6px -5px 12px white, 0px 4px 15px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.radio:checked,
+.checkbox:checked {
+    box-shadow: 0 0 0 rgba(0, 0, 0, .2), 0 0 0 rgba(255, 255, 255, .8), inset 3px 3px 5px #dadada, inset -3px -3px 5px #ffffff;
+}
+
+.radio:disabled,
+.checkbox:disabled {
+    background-color: #00000024;
+    cursor: no-drop;
+}
+
+.radio-label,
+.checkbox-label {
+    color: #0000008a;
+}
+
+.range {
+    box-sizing: border-box;
+    margin: 0;
+    vertical-align: middle;
+    max-width: 100%;
+    width: 100%;
+    -webkit-appearance: none;
+    background: transparent;
+    box-shadow: inset 2px 2px 6px #babecc, inset -4px -5px 8px #fff;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    border-radius: 50%;
+    cursor: default;
+    top: 0;
+    height: 20px;
+    width: 20px;
+    background: linear-gradient(145deg, #ffffff, #d8d8d8);
+    box-shadow: 2px 2px 3px #dadada, -2px -2px 3px #ffffff;
+    cursor: pointer;
+}
+
+
+/* base 基本样式 */
 
 .n-h1,
 .n-h2,

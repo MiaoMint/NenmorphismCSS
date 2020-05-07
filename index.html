@@ -10,8 +10,18 @@
 </head>
 
 <body>
+
     <div class="container ">
         <h1 class="n-h1" style="text-align: center;color: #868a9a;text-shadow: 1px 1px 0 #fff;">NenmorphismCSS</h1>
+        <div class="container mt-2">
+            <div class=" shadow-concave border-sm" style="margin-bottom: 2rem;">
+                <div class="card-body">
+                    <a class="btn btn-primary btn-link" style="margin-right: 1rem;" target="_blank" href="https://www.mmcee.cn">MyWebsite</a>
+                    <a class="btn btn-primary btn-link" style="margin-right: 1rem;" target="_blank" href="https://github.com/ERHECY/NenmorphismCSS">Star</a>
+                </div>
+            </div>
+
+        </div>
 
         <h2 class="n-h2">卡片</h2>
         <div class="shadow border-sm" style="margin-bottom: 2rem;">
@@ -179,7 +189,7 @@
         <br>
         <button class="btn btn-danger btn-full" href="#">danger</button>
         <br>
-        <h3 class="n-h3"> 按钮清除上移动画</h3>
+        <h3 class="n-h3"> 按钮清除阴影缩放动画</h3>
 
         <button class="btn btn-default btn-cleary  " style="margin: 1rem;" href="#">Default</button>
 
@@ -286,23 +296,49 @@
 
         <h2 class="n-h2">表单</h2>
 
-        <form action="">
-            <input type="text" class="input" value="text 文本" style="margin-bottom: 1rem;">
+        <form>
+            <fieldset class="fieldset">
 
-            <input type="password" class="input border" value="text 文本" style="margin-bottom: 1rem;">
+                <legend class="legend">Legend</legend>
+
+                <div>
+                    <input class="input border" type="text" placeholder="明文" style="margin-bottom: 1rem;">
+                    <input type="password" class="input border" placeholder="密文" style="margin-bottom: 1rem;">
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <select class="select">
+                        <option>Option 01</option>
+                        <option>Option 02</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <textarea class="textarea border-sm" rows="5" placeholder="Textarea"></textarea>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="radio-label"><input class="radio" type="radio" name="radio" checked> checked</label>
+                    <label class="radio-label"><input class="radio" type="radio" name="radio"> unchecked</label>
+                    <label class="radio-label"><input class="radio" type="radio" name="radio" disabled> disabled</label>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" checked> checked</label>
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox"> unchecked</label>
+                    <label class="checkbox-label"><input class="checkbox" type="checkbox" disabled> disabled</label>
+                </div>
+
+                <div style="margin-bottom: 1rem;">
+                    <input class="range" type="range" value="2" min="0" max="10" step="0.1">
+                </div>
+
+            </fieldset>
         </form>
+
 
         <h2 class="n-h2">图片</h2>
         <img src="https://api.mmcee.cn/acgimg/acgurl.php" class="img shadow" width="600px" alt="shadow">
-
-    </div>
-    <div class="container mt-2">
-        <div class=" shadow-concave border-sm" style="margin-bottom: 2rem;">
-            <div class="card-body">
-                <a class="btn btn-primary btn-link" style="margin-right: 1rem;" target="_blank" href="https://www.mmcee.cn">MyWebsite</a>
-                <a class="btn btn-primary btn-link" style="margin-right: 1rem;" target="_blank" href="https://github.com/ERHECY/NenmorphismCSS">Star</a>
-            </div>
-        </div>
 
     </div>
 
