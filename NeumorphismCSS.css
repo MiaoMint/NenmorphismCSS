@@ -21,7 +21,6 @@ button {
     padding: 3px 21px;
     line-height: 38px;
     border: none;
-    border-radius: 20px;
     text-align: center;
     transition: 0.3s ease;
     transition-property: box-shadow, transform;
@@ -270,7 +269,7 @@ button {
 /* border 圆角 */
 
 .border {
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
 .border-t {
@@ -465,6 +464,31 @@ hr {
     background: linear-gradient(145deg, #ffffff, #d8d8d8);
     box-shadow: 2px 2px 3px #dadada, -2px -2px 3px #ffffff;
     cursor: pointer;
+}
+
+
+/* progress 进度条 */
+
+.progress {
+    width: 100%;
+}
+
+.progress-back {
+    height: 24px;
+    background-color: var(--back-color);
+    border-radius: 10px;
+    border: 4px solid #f3f4f7;
+    box-shadow: 7px 7px 15px rgba(41, 41, 41, 0.15), -7px -7px 20px rgba(255, 255, 255, 1), inset 0px 0px 4px rgba(255, 255, 255, 0), inset 7px 7px 15px rgba(56, 56, 56, 0.15), inset -7px -7px 20px rgba(255, 255, 255, 1), 0px 0px 4px rgba(255, 255, 255, .2) !important;
+}
+
+.progress-line {
+    height: 16px;
+    background-color: #185BF1;
+    margin-top: -20px;
+    margin-left: 4px;
+    border-radius: 8px;
+    opacity: 1;
+    animation: sliding 3s ease infinite;
 }
 
 
